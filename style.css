@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+nav {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c9184a;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 25px;
+  max-width: 520px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #c9184a;
+  margin-bottom: 15px;
+  font-size: 30px;
+  text-shadow: 0 0 15px rgba(255,192,203,0.5);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  text-shadow: 0 0 8px rgba(255,192,203,0.3);
+}
+
+.heart {
+  font-size: 42px;
+  margin-bottom: 10px;
+  animation: beat 1.6s infinite;
+}
+
+.music-btn {
+  margin: 15px 0;
+  background: #c9184a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.slider {
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  height: 300px;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+footer {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #666;
+}
+
+@keyframes beat {0%,100%{transform:scale(1);}50%{transform:scale(1.25);}}

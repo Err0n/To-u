@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ذكرياتنا</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="startMusicOnce()">
+
+  <nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="gallery.html">ذكرياتنا</a> |
+    <a href="surprise.html">مفاجآت</a>
+  </nav>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-btn" onclick="toggleMusic(event)">⏸️ إيقاف / ▶️ تشغيل</button>
+
+  <div class="card">
+    <div class="heart">💞</div>
+    <h1>ذكرياتنا</h1>
+    <p>صور ولحظات جميلة تجمعنا، كل صورة تحمل ذكرى وفرحة…</p>
+
+    <div class="slider" style="position:relative; height:300px;">
+      <img src="https://img.sanishtech.com/u/b3e668ac497d995080f679d7cfc955cb.jpg" style="opacity:1;">
+      <img src="https://img.sanishtech.com/u/a6bef36fb2396b0917d1a8e29412efb3.jpg">
+      <img src="https://img.sanishtech.com/u/d7dbde1076a269f92e2dcfa9217b8172.jpg">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
